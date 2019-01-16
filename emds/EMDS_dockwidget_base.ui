@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>EMDSDockWidgetBase</class>
+ <widget class="QDockWidget" name="EMDSDockWidgetBase">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>409</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <family>Verdana</family>
+   </font>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">color: rgb(255, 255, 255);
+background-color: rgb(47, 79, 79);
+</string>
+  </property>
+  <property name="windowTitle">
+   <string>EMDS for QGIS</string>
+  </property>
+  <widget class="QWidget" name="dockWidgetContents">
+   <property name="font">
+    <font>
+     <family>Verdana</family>
+    </font>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QGroupBox" name="gbProjectInformation">
+        <property name="styleSheet">
+         <string notr="true">border-color: rgb(255,255,255); border:2px;</string>
+        </property>
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QGroupBox" name="gbProjectButtons">
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(255, 255, 255);
+border-width: 2px;
+border- style: outset;
+</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QHBoxLayout" name="horizontalLayout">
+            <item>
+             <widget class="QPushButton" name="btnTutorial">
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(112, 128, 144);
+border-color:rgb(255,255,255);
+border-width:2px;
+margin-right:2px;
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>Tutorials</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnSettings">
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(112, 128, 144);
+border-color:rgb(255,255,255);
+border-width:2px;
+margin-right:2px;
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>Settings</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnWhatsNew">
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(112, 128, 144);
+border-color:rgb(255,255,255);
+border-width:2px;
+margin-right:2px;
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>What's New</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btnHelp">
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(112, 128, 144);
+border-color:rgb(255,255,255);
+border-width:2px;
+margin-right:2px;
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>EMDS Help</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="lineProjectsProjectsButtons">
+           <property name="styleSheet">
+            <string notr="true">background-color: rgb(255, 255, 0);
+border-width:2px;</string>
+           </property>
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QGroupBox" name="gbProjects">
+           <property name="styleSheet">
+            <string notr="true">border-color: rgb(47, 79, 79);
+border-width: 0px;</string>
+           </property>
+           <property name="title">
+            <string/>
+           </property>
+           <layout class="QFormLayout" name="formLayout">
+            <item row="0" column="0">
+             <widget class="QLabel" name="lblExistingProjects">
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Existing EMDS Projects:</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QListWidget" name="lstProjects">
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(255, 255, 255);</string>
+              </property>
+              <property name="resizeMode">
+               <enum>QListView::Adjust</enum>
+              </property>
+              <property name="batchSize">
+               <number>10</number>
+              </property>
+             </widget>
+            </item>
+            <item row="1" column="1">
+             <widget class="QPushButton" name="btnCreateNewProject">
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">background-color: rgb(112, 128, 144);
+border-color:rgb(255,255,255);
+border-width:2px;
+margin-right:2px;
+border-style:outset;</string>
+              </property>
+              <property name="text">
+               <string>Create New EMDS Project</string>
+              </property>
+             </widget>
+            </item>
+            <item row="2" column="1">
+             <widget class="QLabel" name="lblFirsExplanation">
+              <property name="font">
+               <font>
+                <family>Verdana</family>
+                <pointsize>10</pointsize>
+               </font>
+              </property>
+              <property name="text">
+               <string>Left-Click the project name to open the project.  Right-Click on a project name, and a context-menu for the project will appear.</string>
+              </property>
+              <property name="wordWrap">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+           <zorder>gbProjectButtons</zorder>
+           <zorder>lblExistingProjects</zorder>
+           <zorder>lstProjects</zorder>
+           <zorder>btnCreateNewProject</zorder>
+           <zorder>lblFirsExplanation</zorder>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="Line" name="lineProjectProjectTasks">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgb(255, 255, 0);
+border-width:2px;</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QGroupBox" name="gbProjectTasks">
+        <property name="title">
+         <string/>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="lblProjectTasks">
+           <property name="font">
+            <font>
+             <family>Verdana</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Project Tasks:</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QTreeWidget" name="projectTasks">
+           <property name="styleSheet">
+            <string notr="true">background-color: white;
+border-width:2px;</string>
+           </property>
+           <column>
+            <property name="text">
+             <string notr="true">1</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="lblSecondInformation">
+           <property name="font">
+            <font>
+             <family>Verdana</family>
+             <pointsize>10</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Left-Click on a task to make it active.   Right-Click on a task to bring up a context-menu of actions appropriate for the selected task.</string>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+        <zorder>gbProjectInformation</zorder>
+        <zorder>lblProjectTasks</zorder>
+        <zorder>projectTasks</zorder>
+        <zorder>lblSecondInformation</zorder>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

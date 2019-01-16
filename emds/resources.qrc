@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/plugins/EMDS" >
+        <file>icon.png</file>
+    </qresource>
+</RCC>
